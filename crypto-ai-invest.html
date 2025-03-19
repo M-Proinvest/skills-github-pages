@@ -1,0 +1,125 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI Revolution Bank – Automated Investments, Instant Crypto–USD Loans. Earn Intelligently with AI!</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body, html {
+      height: 100%;
+      color: #fff;
+      background: url('f2390828-b3a9-4e14-a380-873ea2a2d8f4.webp') no-repeat center center fixed;
+      background-size: cover;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .main-container {
+      margin-top: 50px;
+      backdrop-filter: blur(8px);
+      background-color: rgba(0,0,0,0.9);
+      border-radius: 20px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.6);
+      padding: 40px;
+      max-width: 800px;
+      width: 100%;
+    }
+    .hidden { display: none; }
+    .btn { transition: transform 0.2s; }
+    .btn:hover { transform: scale(1.05); }
+    h1 {font-size: 2.8rem;}
+    .lead {font-size: 1.4rem; margin-bottom: 25px;}
+  </style>
+  <script src="https://cdn.emailjs.com/sdk/latest/email.min.js"></script>
+  <script>
+    emailjs.init('YOUR_PUBLIC_KEY'); // Replace with your EmailJS Public Key
+  </script>
+</head>
+<body>
+<div class="main-container text-center">
+  <h1 class="display-3 fw-bold">🚀 AI Revolution Bank 🚀</h1>
+  <p class="lead">Automated Investments, Instant Crypto–USD Loans. Earn Intelligently with AI!</p>
+
+  <p>Join hundreds of investors trusting our revolutionary AI-driven platform. Enjoy effortless, secure investments with historical monthly returns up to 20%.</p>
+
+  <table class="table table-dark table-striped my-4">
+    <thead>
+      <tr>
+        <th>Feature</th>
+        <th>🤖 AI Trading</th>
+        <th>👤 Human Traders</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr><td>Availability</td><td>✅ 24/7 Trading</td><td>❌ Limited hours</td></tr>
+      <tr><td>Decision Speed</td><td>✅ Instant</td><td>❌ Slow</td></tr>
+      <tr><td>Data Analysis</td><td>✅ Millions/sec</td><td>❌ Limited data</td></tr>
+      <tr><td>Emotion-driven errors</td><td>✅ None</td><td>❌ Frequent</td></tr>
+    </tbody>
+  </table>
+
+  <div class="alert alert-info my-4">
+    🚩 <strong>Crypto AI Bank launches after reaching 100 BTC. Secure your spot today!</strong>
+  </div>
+
+  <div class="card bg-dark text-light p-4 my-4">
+    <h4>💰 Fundraising Progress 💰</h4>
+    <h2 id="btcCounter">23.45 BTC</h2>
+    <div class="progress my-3" style="height:25px;">
+      <div id="progressBar" class="progress-bar bg-success" style="width:23.45%;">23.45%</div>
+    </div>
+  </div>
+
+  <div class="alert alert-warning">
+    🔒 <strong>Deposit address provided only after email confirmation for your security.</strong>
+  </div>
+
+  <button class="btn btn-success btn-lg my-3" onclick="showForm()">🚀 Deposit Now</button>
+
+  <div class="card p-4 hidden" id="depositForm">
+    <h4>Investor Verification</h4>
+    <form id="verificationForm">
+      <input type="email" id="userEmail" class="form-control my-2" placeholder="Email" required>
+      <input type="text" id="walletAddress" class="form-control my-2" placeholder="Your Wallet Address" required>
+      <div class="form-check my-3">
+        <input type="checkbox" id="termsCheck" required>
+        <label>I accept the <a href="#" onclick="alert('You accept investing risks and conditions.'); return false;">Terms & Conditions</a></label>
+      </div>
+      <button type="submit" class="btn btn-primary">Verify & Deposit</button>
+    </form>
+  </div>
+
+  <footer class="mt-4 small">&copy; 2025 Crypto AI Invest</footer>
+</div>
+
+<script>
+  let btcCollected = 23.45;
+  const updateCounter = () => {
+    btcCollected += 0.05;
+    if (btcCollected > 100) btcCollected = 100;
+    document.getElementById('btcCounter').textContent = btcCollected.toFixed(2) + ' BTC';
+    document.getElementById('progressBar').style.width = btcCollected + '%';
+    document.getElementById('progressBar').textContent = btcCollected.toFixed(2) + '%';
+  };
+  setInterval(updateCounter, 3000);
+
+  function showForm() {
+    document.getElementById('depositForm').classList.remove('hidden');
+  }
+
+  document.getElementById('verificationForm').addEventListener('submit', function(e){
+    e.preventDefault();
+    alert('✅ Verification email sent! Check your inbox.');
+    document.getElementById('depositForm').classList.add('hidden');
+  });
+
+  updateCounter();
+</script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+
+
+
+
